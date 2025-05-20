@@ -1,0 +1,19 @@
+<!-- challenges/day01-sqli-login/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Day 01 - SQLi Login</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white flex items-center justify-center h-screen">
+
+  <form action="source/app.php" method="POST" class="bg-gray-800 p-8 rounded shadow-md w-80">
+    <h1 class="text-xl font-bold mb-4 text-center">SQLi Login Challenge</h1>
+    <input type="text" name="username" placeholder="Username" class="w-full p-2 mb-4 bg-gray-700 rounded" required>
+    <input type="password" name="password" placeholder="Password" class="w-full p-2 mb-4 bg-gray-700 rounded" required>
+    <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 p-2 rounded">Login</button>
+  </form>
+
+</body>
+</html>
